@@ -43,7 +43,7 @@ export default function BlogsPage() {
     }
 
     return(
-        <main className="p-4">
+        <main className="p-1 md:p-4">
             <section>
                 {!isLoading && <MainNewsCard exhibitionNews={exhibitionNews}/>}
             </section>

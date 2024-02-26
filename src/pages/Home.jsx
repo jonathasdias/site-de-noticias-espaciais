@@ -50,7 +50,7 @@ export default function Home() {
   }
 
   return (
-    <main className="px-4">
+    <main className="px-1 md:px-4">
       <h1 className="text-4xl py-4 text-center">News up to date</h1>
 
       <h2 className="font-bold text-lg py-4 text-center">See news, articles, blogs and reports here. See the most diverse and up-to-date news to date</h2>
@@ -64,7 +64,7 @@ export default function Home() {
           </section>
         </section>
 
-        <section className="col-start-1 col-end-9 grid justify-items-center grid-cols-auto-fit gap-2 md:col-start-7 md:col-end-9 md:flex md:flex-col md:items-center md:border-none py-2 border-t border-black">
+        <section className="col-start-1 col-end-9 grid grid-cols-2 sm:justify-items-center sm:grid-cols-auto-fit gap-2 md:col-start-7 md:col-end-9 md:flex md:flex-col md:items-center md:border-none py-2 border-t border-black">
           <CardNews data={dataArticles} width="md:w-3/4"/>
         </section>
       </div>

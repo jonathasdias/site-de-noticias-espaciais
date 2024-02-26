@@ -43,7 +43,7 @@ export default function ArticlesPage() {
     }
 
     return(
-        <main className="p-4">
+        <main className="p-1 md:p-4">
             {exhibitionNews.url && <MainNewsCard exhibitionNews={exhibitionNews}/>}
 
             <section className="grid justify-items-center grid-cols-2 gap-1 sm:grid-cols-auto-fill my-6">
