@@ -5,10 +5,10 @@ export default function CardNews({data, width}) {
               <a href={article.url} key={article.id} className={width + " p-2 hover:shadow-md transition-all ease-out duration-700"}>
 
                 <figure><img src={article.image_url} alt={article.title} /></figure>
-                <h3 className="font-bold">{article.title}</h3>
-                <p className="line-clamp-3 overflow-hidden overflow-ellipsis my-2">{article.summary}</p>
+                <h3 className="font-bold break-words">{article.title}</h3>
+                <p className="line-clamp-3 overflow-hidden overflow-ellipsis my-2 break-words">{article.summary}</p>
     
-                <p className="text-xs flex justify-between flex-wrap gap-2">
+                <p className="text-xs flex justify-between flex-wrap gap-2 break-words">
                   <span><b>Published at:</b> {article.published_at}</span>
                   <span><b>Updated at:</b> {article.updated_at}</span>
                   <span><b>Site:</b> {article.news_site}</span>

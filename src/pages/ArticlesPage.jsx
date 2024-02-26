@@ -46,7 +46,7 @@ export default function ArticlesPage() {
         <main className="p-4">
             {exhibitionNews.url && <MainNewsCard exhibitionNews={exhibitionNews}/>}
 
-            <section className="grid justify-items-center grid-cols-auto-fill my-6">
+            <section className="grid justify-items-center grid-cols-2 gap-1 sm:grid-cols-auto-fill my-6">
                 <CardNews data={data} />
             </section>
 

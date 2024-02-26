@@ -59,13 +59,13 @@ export default function Home() {
         <section className="col-start-1 col-end-9 md:col-start-1 md:col-end-7">
           {exhibitionNews.url && <MainNewsCard exhibitionNews={exhibitionNews} />}
 
-          <section className="md:flex md:flex-col md:items-center grid justify-items-center grid-cols-auto-fit py-6">
-            <CardNews data={dataBlogs} width="w-3/4"/>
+          <section className="md:flex md:flex-col md:items-center grid justify-items-center grid-cols-auto-fit gap-1 py-6">
+            <CardNews data={dataBlogs} width="md:w-3/4"/>
           </section>
         </section>
 
         <section className="col-start-1 col-end-9 grid justify-items-center grid-cols-auto-fit gap-2 md:col-start-7 md:col-end-9 md:flex md:flex-col md:items-center md:border-none py-2 border-t border-black">
-          <CardNews data={dataArticles} width="w-3/4"/>
+          <CardNews data={dataArticles} width="md:w-3/4"/>
         </section>
       </div>
     </main>

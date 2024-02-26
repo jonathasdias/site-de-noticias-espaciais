@@ -17,7 +17,7 @@ export default function  PaginationButtons({page, setPage, totalPages}) {
         }else {
             btnRight.current.disabled = true;
         }
-    },[page])
+    }, [])
 
     const handlePrevPage = () => {
         if (page > 1) {
