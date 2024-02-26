@@ -49,7 +49,7 @@ export default function BlogsPage() {
             </section>
 
             <section className="grid justify-items-center grid-cols-2 gap-1 sm:grid-cols-auto-fill my-6">
-                <CardNews data={data} />
+                <CardNews data={data} width='w-full'/>
             </section>
 
             {!isLoading && <PaginationButtons page={page} setPage={setPage} totalPages={totalPages} />}
